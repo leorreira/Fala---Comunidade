@@ -3,76 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Reclamações</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            padding: 20px;
-        }
-
-        .form-container {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            max-width: 400px;
-        }
-
-        label {
-            font-size: 16px;
-            font-weight: bold;
-            display: block;
-            margin-top: 10px;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        input[type="submit"] {
-            background-color: #28a745;
-            color: white;
-            border: none;
-            padding: 10px;
-            margin-top: 15px;
-            cursor: pointer;
-            width: 100%;
-            font-size: 16px;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #218838;
-        }
-    </style>
+    <title>Reclamações e Sugestões</title>
 </head>
 <body>
-    <div class="form-container">
-        <h2>Reclamações e Sugestões</h2>
-        <p>Envie sua mensagem para melhorar nossa comunidade.</p>
+    <h1>Formulário de Reclamações e Sugestões</h1>
+    <p>Por favor, nos envie suas sugestões ou reclamações. A sua opinião é muito importante!</p>
 
-        <form action="https://formspree.io/f/mgvolkpo" method="POST">
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required>
+    <!-- Formulário -->
+    <form action="https://formspree.io/f/mwkabryb" method="POST">
+        <label for="name">Nome:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
 
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
 
-            <label for="message">Mensagem:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+        <label for="message">Mensagem:</label><br>
+        <textarea id="message" name="message" required></textarea><br><br>
 
-            <input type="submit" value="Enviar">
-        </form>
-    </div>
+        <input type="submit" value="Enviar">
+    </form>
 </body>
 </html>
